@@ -51,12 +51,12 @@ export default function Home() {
       {/* Categorias */}
       {visivel("categorias") && (
         <AnimacaoScroll>
-          <section className="max-w-[1400px] mx-auto px-6 py-16">
+          <section className="max-w-[1400px] mx-auto px-4 sm:px-6 py-10 sm:py-16">
             <div className="text-center mb-10">
               <p className="text-[11px] uppercase tracking-[0.25em] text-[#D4A843]/80 mb-4 font-semibold">
                 {sCat.subtitulo || "Navegue por"}
               </p>
-              <h2 className="text-3xl md:text-4xl text-[#1a1a2e]">
+              <h2 className="text-2xl sm:text-3xl md:text-4xl text-[#1a1a2e]">
                 {sCat.titulo || "Categorias"}
               </h2>
             </div>
@@ -83,7 +83,7 @@ export default function Home() {
             <div className="flex items-center justify-between mb-8">
               <div>
                 <p className="text-[11px] uppercase tracking-[0.2em] text-[#D4A843] mb-2 font-medium">{sLanc.subtitulo || "Acabou de chegar"}</p>
-                <h2 className="text-3xl md:text-4xl text-[#1a1a2e]">{sLanc.titulo || "Lançamentos"}</h2>
+                <h2 className="text-2xl sm:text-3xl md:text-4xl text-[#1a1a2e]">{sLanc.titulo || "Lançamentos"}</h2>
               </div>
               <Link href="/catalogo" className="text-[12px] uppercase tracking-[0.1em] text-[#D4A843] hover:text-[#1a1a2e] transition-colors border-b border-[#D4A843] hover:border-[#1a1a2e] pb-0.5">
                 {sLanc.textoBotao || "Ver todos"}
@@ -107,7 +107,7 @@ export default function Home() {
             <div className="max-w-[1400px] mx-auto px-6 py-20 grid md:grid-cols-2 gap-8 items-center relative z-10">
               <div>
                 <p className="text-[11px] uppercase tracking-[0.2em] text-[#D4A843] mb-4 font-medium">{sPromo.subtitulo}</p>
-                <h2 className="text-3xl md:text-5xl text-white leading-tight mb-4">{sPromo.titulo}</h2>
+                <h2 className="text-2xl sm:text-3xl md:text-5xl text-white leading-tight mb-4">{sPromo.titulo}</h2>
                 <div className="mb-6"><Countdown label="Oferta encerra em:" /></div>
                 <p className="text-[15px] text-white/60 mb-8 max-w-md">{sPromo.descricao}</p>
                 <Link href="/catalogo" className="inline-block bg-[#D4A843] text-white px-10 py-3.5 text-[12px] uppercase tracking-[0.15em] font-medium hover:bg-[#C49A30] transition-colors">{sPromo.textoBotao}</Link>
@@ -132,11 +132,11 @@ export default function Home() {
       {/* Mais Vendidos */}
       {visivel("maisVendidos") && maisVendidos.length > 0 && (
         <AnimacaoScroll>
-          <section className="max-w-[1400px] mx-auto px-6 py-16">
+          <section className="max-w-[1400px] mx-auto px-4 sm:px-6 py-10 sm:py-16">
             <div className="flex items-center justify-between mb-8">
               <div>
                 <p className="text-[11px] uppercase tracking-[0.2em] text-[#D4A843] mb-2 font-medium">{sMV.subtitulo || "Campeões de venda"}</p>
-                <h2 className="text-3xl md:text-4xl text-[#1a1a2e]">{sMV.titulo || "Mais Vendidos"}</h2>
+                <h2 className="text-2xl sm:text-3xl md:text-4xl text-[#1a1a2e]">{sMV.titulo || "Mais Vendidos"}</h2>
               </div>
               <Link href="/catalogo" className="text-[12px] uppercase tracking-[0.1em] text-[#D4A843] hover:text-[#1a1a2e] transition-colors border-b border-[#D4A843] hover:border-[#1a1a2e] pb-0.5">{sMV.textoBotao || "Ver todos"}</Link>
             </div>
@@ -151,11 +151,11 @@ export default function Home() {
       {/* Destaques */}
       {visivel("destaques") && destaques.length > 0 && (
         <AnimacaoScroll>
-          <section className="max-w-[1400px] mx-auto px-6 py-16">
+          <section className="max-w-[1400px] mx-auto px-4 sm:px-6 py-10 sm:py-16">
             <div className="flex items-center justify-between mb-8">
               <div>
                 <p className="text-[11px] uppercase tracking-[0.2em] text-[#D4A843] mb-2 font-medium">{sDest.subtitulo || "Os mais amados"}</p>
-                <h2 className="text-3xl md:text-4xl text-[#1a1a2e]">{sDest.titulo || "Destaques"}</h2>
+                <h2 className="text-2xl sm:text-3xl md:text-4xl text-[#1a1a2e]">{sDest.titulo || "Destaques"}</h2>
               </div>
               <Link href="/catalogo" className="text-[12px] uppercase tracking-[0.1em] text-[#D4A843] hover:text-[#1a1a2e] transition-colors border-b border-[#D4A843] hover:border-[#1a1a2e] pb-0.5">{sDest.textoBotao || "Ver todos"}</Link>
             </div>
@@ -171,7 +171,7 @@ export default function Home() {
             <div className="max-w-[1400px] mx-auto px-6">
               <div className="text-center mb-12">
                 <p className="text-[11px] uppercase tracking-[0.25em] text-[#D4A843]/80 mb-4 font-semibold">{sDep.subtitulo || "O que dizem"}</p>
-                <h2 className="text-3xl md:text-4xl text-[#1a1a2e]">{sDep.titulo || "Nossas Clientes"}</h2>
+                <h2 className="text-2xl sm:text-3xl md:text-4xl text-[#1a1a2e]">{sDep.titulo || "Nossas Clientes"}</h2>
               </div>
               <div className="grid md:grid-cols-3 gap-8">
                 {depoimentos.slice(0, 3).map((dep, i) => (
@@ -218,10 +218,10 @@ export default function Home() {
       {/* Todos os Produtos */}
       {visivel("todosOsProdutos") && (
         <AnimacaoScroll>
-          <section className="max-w-[1400px] mx-auto px-6 py-16">
+          <section className="max-w-[1400px] mx-auto px-4 sm:px-6 py-10 sm:py-16">
             <div className="text-center mb-12">
               <p className="text-[11px] uppercase tracking-[0.25em] text-[#D4A843]/80 mb-4 font-semibold">{sTodos.subtitulo || "Coleção Completa"}</p>
-              <h2 className="text-3xl md:text-4xl text-[#1a1a2e]">{sTodos.titulo || "Todas as Peças"}</h2>
+              <h2 className="text-2xl sm:text-3xl md:text-4xl text-[#1a1a2e]">{sTodos.titulo || "Todas as Peças"}</h2>
             </div>
             <div className="grid grid-cols-2 md:grid-cols-4 gap-x-5 gap-y-10">
               {produtos.map((produto, i) => (

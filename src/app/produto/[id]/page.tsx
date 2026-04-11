@@ -63,7 +63,7 @@ export default function ProdutoPage() {
   };
 
   return (
-    <div className="max-w-[1400px] mx-auto px-6 py-8">
+    <div className="max-w-[1400px] mx-auto px-4 sm:px-6 py-6 sm:py-8">
       {/* Breadcrumb */}
       <div className="flex items-center gap-2 text-[12px] text-[#999] mb-8 overflow-x-auto whitespace-nowrap">
         <Link href="/" className="hover:text-[#1a1a2e] transition-colors duration-300">Inicio</Link>

@@ -47,7 +47,7 @@ export default function Beneficios() {
   return (
     <section className="border-y border-[#F0E8D8]/50 py-10 bg-white/80">
       <div className="max-w-[1400px] mx-auto px-6">
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4 sm:gap-6">
           {beneficios.map((b, i) => (
             <div key={i} className="flex items-center gap-4">
               <div className="text-[#D4A843] shrink-0">{b.icone}</div>

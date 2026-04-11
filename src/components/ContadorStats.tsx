@@ -30,7 +30,7 @@ function AnimatedNumber({ target, suffix = "" }: { target: number; suffix?: stri
   }, [target]);
 
   return (
-    <div ref={ref} className="text-3xl md:text-5xl text-[#D4A843] tabular-nums">
+    <div ref={ref} className="text-2xl sm:text-3xl md:text-5xl text-[#D4A843] tabular-nums">
       {value.toLocaleString("pt-BR")}{suffix}
     </div>
   );

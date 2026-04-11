@@ -76,7 +76,7 @@ export default function CarrinhoPage() {
   );
 
   return (
-    <div className="max-w-[1400px] mx-auto px-6 py-12">
+    <div className="max-w-[1400px] mx-auto px-4 sm:px-6 py-8 sm:py-12">
       <h1 className="text-2xl font-medium text-[#1a1a2e] tracking-[0.03em] mb-4">
         Carrinho
       </h1>
@@ -198,7 +198,7 @@ export default function CarrinhoPage() {
 
         {/* Resumo */}
         <div>
-          <div className="bg-[#FBF8F3] p-8 space-y-6 sticky top-28">
+          <div className="bg-[#FBF8F3] p-8 space-y-6 sticky top-20 md:top-28">
             <h2 className="text-[11px] uppercase tracking-[0.15em] font-medium text-[#1a1a2e] mb-6">
               Resumo do Pedido
             </h2>

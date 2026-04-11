@@ -12,7 +12,7 @@ export default function Footer() {
 
       <footer className="bg-[#1a1a2e] mt-auto">
         <div className="max-w-[1400px] mx-auto px-6 py-16">
-          <div className="grid grid-cols-1 md:grid-cols-4 gap-12">
+          <div className="grid grid-cols-1 md:grid-cols-4 gap-8 md:gap-12">
             {/* Logo e descrição */}
             <div className="md:col-span-1">
               <h3 className="logo-brand text-xl text-[#D4A843] mb-1">{config.nomeLoja}</h3>

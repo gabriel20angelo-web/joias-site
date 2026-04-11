@@ -29,7 +29,7 @@ export default function CompreJunto({ principal, sugestões }: { principal: Prod
       </h3>
       <div className="flex items-center gap-4 flex-wrap">
         {/* Produto principal */}
-        <div className="flex items-center gap-3 flex-1 min-w-[200px]">
+        <div className="flex items-center gap-3 flex-1 min-w-[140px] sm:min-w-[200px]">
           <div className="w-16 h-20 bg-[#eee] flex items-center justify-center text-xl shrink-0">💎</div>
           <div>
             <p className="text-[12px] text-[#1a1a2e] font-light line-clamp-2">{principal.nome}</p>
@@ -40,7 +40,7 @@ export default function CompreJunto({ principal, sugestões }: { principal: Prod
         <span className="text-[20px] text-[#ccc] font-light">+</span>
 
         {/* Produto sugerido */}
-        <Link href={`/produto/${combo.id}`} className="flex items-center gap-3 flex-1 min-w-[200px] group">
+        <Link href={`/produto/${combo.id}`} className="flex items-center gap-3 flex-1 min-w-[140px] sm:min-w-[200px] group">
           <div className="w-16 h-20 bg-[#eee] flex items-center justify-center text-xl shrink-0">💎</div>
           <div>
             <p className="text-[12px] text-[#1a1a2e] font-light line-clamp-2 group-hover:text-[#D4A843] transition-colors">{combo.nome}</p>

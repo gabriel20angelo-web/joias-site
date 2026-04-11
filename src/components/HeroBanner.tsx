@@ -37,7 +37,7 @@ export default function HeroBanner() {
                 {banner.subtitulo}
               </p>
               <div className="gold-divider mb-6 animate-fadeUp" />
-              <h1 className="text-4xl md:text-6xl lg:text-7xl leading-[1.1] text-[#1a1a2e] mb-8 animate-fadeUp animation-delay-100">
+              <h1 className="text-2xl sm:text-4xl md:text-6xl lg:text-7xl leading-[1.1] text-[#1a1a2e] mb-8 animate-fadeUp animation-delay-100">
                 {banner.titulo[0]}
                 <br />
                 <span className="italic">{banner.titulo[1]}</span>

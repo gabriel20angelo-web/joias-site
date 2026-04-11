@@ -24,7 +24,7 @@ export default function Avaliacoes({
         Avaliacoes dos Clientes
       </h2>
 
-      <div className="grid md:grid-cols-[280px_1fr] gap-12">
+      <div className="grid grid-cols-1 md:grid-cols-[280px_1fr] gap-6 md:gap-12">
         {/* Resumo */}
         <div className="bg-[#FBF8F3] p-6 self-start">
           <div className="text-center mb-4">

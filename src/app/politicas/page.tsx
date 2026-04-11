@@ -6,7 +6,7 @@ export default function Politicas() {
   const { config } = useLoja();
 
   return (
-    <div className="max-w-3xl mx-auto px-6 py-16">
+    <div className="max-w-3xl mx-auto px-4 sm:px-6 py-10 sm:py-16">
       <div className="text-center mb-16">
         <p className="text-[11px] uppercase tracking-[0.2em] text-[#D4A843] mb-3 font-medium">
           Informações

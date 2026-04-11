@@ -43,7 +43,7 @@ export default function Header() {
   return (
     <>
       <header className={`bg-white/95 backdrop-blur-md sticky top-0 z-50 transition-shadow duration-300 ${scrolled ? "shadow-sm" : "border-b border-gray-100/80"}`}>
-        <div className="max-w-[1400px] mx-auto px-6 py-4 flex items-center justify-between">
+        <div className="max-w-[1400px] mx-auto px-4 sm:px-6 py-3 sm:py-4 flex items-center justify-between">
           {/* Menu mobile */}
           <button className="lg:hidden text-[#1a1a2e]" onClick={() => setMenuAberto(!menuAberto)}>
             <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth={1.5}>

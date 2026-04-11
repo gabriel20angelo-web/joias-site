@@ -14,7 +14,7 @@ export default function SobrePage() {
       <section className="bg-[#FBF8F3] py-20 px-6">
         <div className="max-w-3xl mx-auto text-center">
           <p className="text-[11px] uppercase tracking-[0.2em] text-[#D4A843] mb-4 font-medium">Nossa História</p>
-          <h1 className="text-3xl md:text-5xl text-[#1a1a2e] tracking-[0.03em] mb-6">
+          <h1 className="text-2xl sm:text-3xl md:text-5xl text-[#1a1a2e] tracking-[0.03em] mb-6">
             {config.nomeLoja}
           </h1>
           <p className="text-[15px] text-[#666] leading-relaxed max-w-xl mx-auto">
