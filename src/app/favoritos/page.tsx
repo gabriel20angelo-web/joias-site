@@ -2,6 +2,7 @@
 
 import { useFavoritos } from "@/context/FavoritosContext";
 import { useLoja } from "@/context/LojaContext";
+import Breadcrumb from "@/components/Breadcrumb";
 import CardProduto from "@/components/CardProduto";
 import Link from "next/link";
 
@@ -34,7 +35,8 @@ export default function FavoritosPage() {
 
   return (
     <div className="max-w-[1400px] mx-auto px-6 py-12">
-      <div className="text-center mb-12">
+      <Breadcrumb itens={[{ label: "Favoritos" }]} />
+        <div className="text-center mb-12">
         <p className="text-[11px] uppercase tracking-[0.2em] text-[#D4A843] mb-3 font-medium">
           Seus favoritos
         </p>

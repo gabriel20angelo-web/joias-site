@@ -5,6 +5,7 @@ import { useSearchParams } from "next/navigation";
 import CardProduto from "@/components/CardProduto";
 import { useLoja } from "@/context/LojaContext";
 import AnimacaoScroll from "@/components/AnimacaoScroll";
+import Breadcrumb from "@/components/Breadcrumb";
 
 type Ordenacao = "relevância" | "menor-preco" | "maior-preco" | "mais-avaliados" | "novidades";
 
@@ -72,6 +73,8 @@ function CatalogoInner() {
           Catálogo
         </h1>
       </div>
+
+      <Breadcrumb itens={[{ label: "Catálogo" }]} />
 
       {/* Busca */}
       <div className="max-w-md mx-auto mb-8">

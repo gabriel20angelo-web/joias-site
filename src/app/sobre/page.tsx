@@ -2,6 +2,7 @@
 
 import { useLoja } from "@/context/LojaContext";
 import Link from "next/link";
+import Breadcrumb from "@/components/Breadcrumb";
 import AnimacaoScroll from "@/components/AnimacaoScroll";
 
 export default function SobrePage() {
@@ -10,6 +11,8 @@ export default function SobrePage() {
 
   return (
     <div>
+      {/* Breadcrumb */}
+      <div className="max-w-[1400px] mx-auto px-4 sm:px-6 pt-6"><Breadcrumb itens={[{ label: "Sobre Nós" }]} /></div>
       {/* Hero */}
       <section className="bg-[#FBF8F3] py-20 px-6">
         <div className="max-w-3xl mx-auto text-center">

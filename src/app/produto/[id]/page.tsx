@@ -16,6 +16,7 @@ import BarraMobileCompra from "@/components/BarraMobileCompra";
 import VistoRecentemente, { registrarVisualizacao } from "@/components/VistoRecentemente";
 import Countdown from "@/components/Countdown";
 import GuiaTamanhos from "@/components/GuiaTamanhos";
+import Breadcrumb from "@/components/Breadcrumb";
 import { useEffect } from "react";
 
 function formatarPreco(valor: number) {
@@ -64,16 +65,11 @@ export default function ProdutoPage() {
 
   return (
     <div className="max-w-[1400px] mx-auto px-4 sm:px-6 py-6 sm:py-8">
-      {/* Breadcrumb */}
-      <div className="flex items-center gap-2 text-[12px] text-[#999] mb-8 overflow-x-auto whitespace-nowrap">
-        <Link href="/" className="hover:text-[#1a1a2e] transition-colors duration-300">Inicio</Link>
-        <span>/</span>
-        <Link href="/catalogo" className="hover:text-[#1a1a2e] transition-colors duration-300">Catálogo</Link>
-        <span>/</span>
-        <Link href={`/catalogo?cat=${produto.categoria}`} className="hover:text-[#1a1a2e] transition-colors duration-300">{produto.categoria}</Link>
-        <span>/</span>
-        <span className="text-[#1a1a2e]">{produto.nome}</span>
-      </div>
+      <Breadcrumb itens={[
+        { label: "Catálogo", href: "/catalogo" },
+        { label: produto.categoria, href: `/catalogo?cat=${produto.categoria}` },
+        { label: produto.nome },
+      ]} />
 
       <div className="grid md:grid-cols-2 gap-12 lg:gap-20">
         {/* Galeria */}

@@ -3,6 +3,7 @@
 import { useCarrinho } from "@/context/CarrinhoContext";
 import { useLoja } from "@/context/LojaContext";
 import CalculoFrete from "@/components/CalculoFrete";
+import Breadcrumb from "@/components/Breadcrumb";
 import Link from "next/link";
 import { useState } from "react";
 
@@ -77,6 +78,7 @@ export default function CarrinhoPage() {
 
   return (
     <div className="max-w-[1400px] mx-auto px-4 sm:px-6 py-8 sm:py-12">
+      <Breadcrumb itens={[{ label: "Carrinho" }]} />
       <h1 className="text-2xl font-medium text-[#1a1a2e] tracking-[0.03em] mb-4">
         Carrinho
       </h1>
